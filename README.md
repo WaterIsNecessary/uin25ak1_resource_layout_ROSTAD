@@ -9,10 +9,10 @@
 
 ## Fargekoder
 
-#2A324B
-#58699D
-#E1E5EE
-#fff
+- #2A324B
+- #58699D
+- #E1E5EE
+- #fff
 
 ## Font
 
@@ -26,6 +26,6 @@ Roboto, også hentet fra google
 - Innholdet på siden skal komme fra ressurser.js
 - Det skal kun være en HTML-fil i innleveringen
 - Det skal brukes semantisk HTML
-- Ingen <div>-tagger skal brukes
+- Ingen `<div>` tagger skal brukes
 - Null røde error på HTML
 - Når siden lastes skal kun linker fra kategorien HTML vises. Dette skal løses ved hjelp av .filter() og .map()
