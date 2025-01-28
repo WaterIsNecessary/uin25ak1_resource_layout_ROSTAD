@@ -8,20 +8,17 @@
 
     background-color: var(--almostWhite);    
     font-family: "Roboto", serif;
-    font-size: 20px;
-    
-    padding: 0;
-    
-    max-width: 80%;    
-    margin: 0 auto;
+    font-size: 20px;    
+}
 
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-    };
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-    
-
+body {
+    max-width: 55%;    
+    margin: 0 auto;    
 }
 
 header {
@@ -32,15 +29,41 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
-        gap: 1rem;
+                
+
+        .tabs {
+            padding: 2vh 2.5vw;
+            background-color: var(--darkBlue);
+            color: var(--white);
+            font-weight: 900;
+        }
+
+        .tabs.active {
+            background-color: var(--white);
+            color: var(--darkBlue);
+        }
+
+        a {
+            text-decoration: none;        
+        };
     };    
 }
 
+
 main {
-    background-color: var(--white);
+
+    section {
+        padding: 10vh 2.5vw;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;        
+            
+        background-color: var(--white);
+
+        #links > li > a {
+            color: var(--lightBlue);
+        }
+        
+    }
 }
-
-
-
-
-

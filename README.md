@@ -1,7 +1,7 @@
 
 # Arbeidskrav 1
 
-<strong>I arbeidskrav en skal jeg</strong>
+<strong>I arbeidskrav en skal jeg:</strong>
 
 - Utvikle HTML-strukturen og CSS-stilene nødvendig for å få en nettside med samme utseende som skissen fra arbeidskrav_1-mappen
 - Inkludere ressurser.js i HTML-filen
