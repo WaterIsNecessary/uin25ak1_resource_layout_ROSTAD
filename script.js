@@ -1,8 +1,6 @@
 const tabs = document.querySelectorAll(".tabs");
 const currentDisplay = document.querySelector('#displayed');
-const heading = document.querySelector('#technology');
-const text = document.querySelector('#description');
-const list = document.querySelector('#links');
+const initialTab = document.querySelector(".tabs.first")
 
 function produceSources(sources) {
 
@@ -25,14 +23,11 @@ tabs.forEach(tab => {
 
 function produceTab(resources,eventTarget) {
 
-    /* tabs.classList.remove("active"); */
     tabs.forEach(tab => tab.classList.remove("active"));
 
     eventTarget.classList.add("active");
 
-    const filteredArray = resources.filter(resource => resource.category === eventTarget.textContent);
-    
-    /* console.log(filteredArray[0].category) */;
+    const filteredArray = resources.filter(resource => resource.category === eventTarget.textContent);    
 
     currentDisplay.innerHTML = `
         <h1 id="technology">${filteredArray[0].category}</h1>
@@ -43,10 +38,11 @@ function produceTab(resources,eventTarget) {
                 ${produceSources(filteredArray[0].sources)}
             </ul>
     `;
-
-    /* console.log(produceSources(filteredArray[0].sources)) */
-
 }
+
+window.addEventListener('load', () => {
+    produceTab(resources,initialTab);
+})
 
 
 
