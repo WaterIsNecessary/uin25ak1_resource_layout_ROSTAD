@@ -17,13 +17,13 @@
 }
 
 body {
-    max-width: 55%;    
+    max-width: 55%;                
     margin: 0 auto;    
 }
 
 header {
     background-color: var(--almostWhite);
-    padding-top: 10vh;
+    padding-top: 25vh;
     
 
     nav {
